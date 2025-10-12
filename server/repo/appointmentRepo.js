@@ -12,3 +12,17 @@ export const getRecords = async () => {
         orderBy: {created_at: 'desc'}
     });
 };
+
+// admin panel ----------------------------------------------
+
+
+export const updateStatus = async (id, status) => {
+    return await prisma.appointments.update({
+        where: {
+            id: id,
+        },
+        data: {
+            status: status,
+        },
+    });
+};

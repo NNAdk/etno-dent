@@ -17,3 +17,17 @@ export const getRecordsController = async (req, res) => {
         res.status(500).json({error: err.message});
     }
 };
+
+// admin panel ----------------------------------------------
+
+
+export const updateStatusController = async (req, res) => {
+    try {
+        const id = parseInt(req.params.id);
+        const { status } = req.body;
+        const update = await appointmentRepo.updateStatus(id, status);
+        res.status(201).json(update);
+    } catch (err) {
+        res.status(500).json({error: err.message});
+    }
+}

@@ -118,25 +118,25 @@ const Header = () => {
                   onClick={() => scrollToSection('services')}
                   className="text-gray-600 hover:text-emerald-600 transition-colors duration-200 text-left"
                 >
-                  Services
+                  Полсуги
                 </button>
                 <button 
                   onClick={() => scrollToSection('about')}
                   className="text-gray-600 hover:text-emerald-600 transition-colors duration-200 text-left"
                 >
-                  About Us
+                  Про нас
                 </button>
                 <button 
                   onClick={() => scrollToSection('doctors')}
                   className="text-gray-600 hover:text-emerald-600 transition-colors duration-200 text-left"
                 >
-                  Our Doctors
+                  Наша команда
                 </button>
                 <button 
                   onClick={() => scrollToSection('contact')}
                   className="text-gray-600 hover:text-emerald-600 transition-colors duration-200 text-left"
                 >
-                  Contact
+                  Контакти
                 </button>
                 <Button 
                   onClick={openModal}
