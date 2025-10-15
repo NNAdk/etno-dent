@@ -1,0 +1,7 @@
+
+/generated/prisma
+.env
+database.sql
+schema.prisma
+node_modules
+
